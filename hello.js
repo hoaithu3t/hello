@@ -2,8 +2,8 @@
 
 let http = require('http');
 //const port = 3000;
-var port = process.env.PORT;
-var host = process.env.HOST;
+var port = process.env.PORT||3000;
+var host = process.env.HOST||"0.0.0.0";
 
 let server = http.createServer(requestHandler);
 
